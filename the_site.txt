@@ -1,0 +1,1858 @@
+# Recursos do KeyPad "SayoDevice"
+
+Esse é o lugar com todos os recursos relacionados a o SayoDevice. 
+
+Alem disso é o lugar com tem todas as dicas e macetes que se pode fazer com o SayoDevice, até soluções pra problemas diversos.
+
+Este site não é relacionado com qualquer pessoal do Sayo.
+
+Pra começar, Clique no [*Índice*](https://rentry.co/o3c#index).
+
+Ou cheque a [FAQ](https://rentry.co/o3c#faq) se você tem dúvidas sobre este site.
+
+Divirta-se!
+-> ![wat](https://lerh050.s-ul.eu/8FVXvPJU) <-
+
+#🇷🇺🇨🇳 Outras línguas 🇷🇺🇨🇳
+- [Íngles 🇺🇸](https://rentry.co/o3c#index)
+- [Russo 🇷🇺](https://rentry.co/o3cru)
+- [Ucrâniano 🇺🇦](https://rentry.co/o3cua)
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+#Índice
+#-> [Modo claro/escuro aqui....](https://rentry.co/o3c#lightdark-mode-here-click-it) <-
+-> ==***Não sabe o que fazer? Cheque a calibração - > Explicação dos parâmetros dos switches.***== <-
+[TOC2]
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+## -> Entrada <-
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Calibração
+***
+[Quer voltar?](https://rentry.co/o3c#index)
+
+######->==**Como?**==<-
+
+1. **Pressione** e **Segure** o botão de controle.
+
+2. Scrolla o botão pra baixo até a opção "Button", e clique.
+
+3. Vá para calibração, selecione qual tecla você deseja calibrar, e então calibre.
+
+4. Pressione o switch gentilmente até que você sinta o final dele, e então solte.
+
+###### ->==**O que é calibração**==<-
+
+O processo de calibrar o switch é apenas para definir o ponto final do switch.
+
+Você tem que sempre pressionar com cuidado, se apertar demais o switch as presilhas dele vão dobrar e o switch vai ir pra baixo demais, dando uma leitura errada pro sensor.
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Explicação dos parâmetros do switch
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+***Todos*** os valores são ***RELATIVOS*** a o topo do switch (0.00mm), e eles são construidos assumindo que você tenha um switch com **4mm de atuação**. 
+(Talvez você esteja procurando o [HE switches chart](https://rentry.co/o3c#he-switches-chart) )
+
+Clique no valor para selecionar. Gire o botão para a Esquerda/Direita para respectivamente aumentar/diminuir, cada clique que você sentir é equivalente a `0.05mm`.
+O limite para todos os valores é `3.95mm`, e o mínimo é `0.00mm` (você vai ter que girar o botão pra esquerda duas vezes para `0.05mm` para poder colocar 0.00mm que é um valor "especial")
+Você sempre pode clicar para sair do painel e ver qual valor você colocou em números.
+
+#### -> ==***Rapid Trigger Normal***== <-
+
+###### -> ==[Trigger] e [Release]== <-
+
+Toda a distância antes do [Release] é considerada uma "zona morta", o que acontecer nela vai ser efetivamente ignorado.
+(Por exemplo, se o meu [Release] é `0.69mm` então `0.00mm` -> `0.68mm` é minha "zona morta") 
+
+Essas duas configurações equivalem a um [Ponto de atuação], como em switches normais.
+
+o [Trigger] Tem que ser sempre maior que o [Release].
+
+Quando o switch passa o [Trigger], o keypad registra um click e é considerado como se a tecla fosse pressionada "para baixo".
+Você pode pressionar até que uma dessas coisas aconteça:
+1. Você solte a tecla de acordo com o quanto de Release você colocou, esse sendo o ponto de Release absoluto independente para o que esteja acontecendo.
+2. Você está na [Área de RT] e solta para o quanto [RT Release] está programado.
+***Com isso, é certo que [Release] e [Trigger] são os pontos de ativado/desativado para todo o funcionamento do KeyPad.***
+
+A distância entre eles decide o quão grande seu [Ponto de atuação] é, do qual tem que ser no mínimo `0.10mm`.
+Você pode ter pontos como `0.05mm`, mas aí pode acontecer de causar clicks acidentais e clicks não intencionados por causa de interferência no sensor.
+
+!!! warning NO ENTANTO, tem um macete legal.
+	Se o seu [Ponto de atuação] está acima de `0.10mm` ou menor pode causar clicks aleatórios na parte de cima da zona de atuação. [Veja o vídeo](https://lerh050.s-ul.eu/NjZ0YjMf)
+	Para arrumar isso, Aumente a distância para no mínimo `0.15mm` (Talvez até mair) em vez de `0.10mm`. [Veja o vídeo](https://lerh050.s-ul.eu/hCyP9ATj)
+
+Por exemplo:
+
+Eu quero `0.20mm` de [Ponto de atuação] em `0.30mm`
+
+O que eu faria teria que ser: 
+
+Colocar meu [Trigger] em `0.30mm` para que o click registre exatamente a onde eu quero que seja.
+e colocar meu [Release] para `0.10mm` para que eu tenha que soltar `0.20mm` para resetar a tecla. 
+
+
+###### -> ==[RT Top] e [RT End]== <-
+
+Esses dois parâmetros definem onde o Rapid Trigger vai funcionar, que é referico como [Área de RT]
+
+[RT Top] define o topo da [Área de RT].
+Se você quer que o Rapid Trigger esteja ativo o tempo todo, apenas coloque com o mesmo valor do [Trigger].
+Qualquer valor é usado para casos avançados (Como usar Rapid Trigger em só metade da área de atuação do switch, etc...)
+[Rapid Trigger Contínuo](https://rentry.co/o3c#continuous-rapid-trigger) e [Desativar Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger) também faz um uso especial disso.
+
+[RT End] define o final da [Área de RT].
+Para a maioria das pessoas, a única vez que você vai alterar isso é:
+1. Seus dedos são muito tremidos enquanto você segura um slider, nesse caso você teria que diminuir até que você não ative sem querer o [RT Release]. isso cria uma "Zona Morta no final da Área de atuação" para a sua tremedeira.
+2. Mais ou menos igual a de cima, se você está sentindo que o click está se soltando sozinho enquanto *levantando a tecla*, reduzir ajudaría também.
+3. [Desativar Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger)
+(O valor padrão já é perfeito o suficiente, então você mal vai precisar mexer nisso)
+
+Só você seja um louco que tem as próprias ideias de como a sua gameplay tem que ser, eu não sei.
+
+
+###### -> ==[RT Trigger] e [RT Release]== <-
+
+Essas duas variáveis só tem efeito na [Área de RT]. Elas operam a sensibilidade operacional.
+
+[RT Trigger] Controla o quanto você pressionou a tecla para contar como um click, e então muda o estado para "pressionado" na [Área de RT].
+
+[RT Release] Controla o quanto você tem que soltar a tecla para ela sair do estado de "pressionado" na [Área de RT].
+
+Nas outras variáveis, mude elas de acordo com suas preferências e seu conforto.
+
+!!! A Recomendação geral é usar sempre mais que `0.20mm` nos dois valores. se não fizer isso talvez você experiencie clicks não desejados.
+
+
+#### -> ==***Rapid Trigger Continuo***== <-
+-> ==*Esse "modo" é ativado quando você coloca seu [RT Top] em  `0.00mm`, e seu [Trigger] igual a o seu [RT End]. (Por exemplo, `3.95mm` [Trigger] e `3.95mm` [RT End])*== <-
+-> (Esse jeito também é como os antigos firmwares funcionavam.) ->
+
+Nesse modo o KeyPad funciona como um Rapid Trigger normal sem um [Ponto de atuação].
+
+[Release] vira a antiga [Zona Morta] do firmware antigo. Qualquer coisa na [Zona Morta] será completamente ignorado. 
+
+Você pode usar ainda o [RT End] e [Trigger] para colocar uma [Zona Morta] na parte de baixo do switch também. (Por exemplo, em `3.70mm` nos dois valores o KeyPad vai ignorar `0.30mm` na parte de baixo do switch.)
+(Se você quer só copiar suas configurações dos firmwares antigos só coloque `3.95mm`, já que os antigos firmwares nunca tiveram uma configuração na parte de baixo do switch de todo o jeito.)
+(Além disso, se você for copiar suas configurações antigas, Só coloque [Press] e [Release] Iguais as das suas configurações antigas) 
+
+Por exemplo:
+
+Minhas configurações antigas eram `0.10mm` de [Deadzone], `0.20mm` de [Press] e `0.25mm` de [Release]
+
+Para replicar essas configurações no novo firmware, Você primeiro coloca [Release] em `0.10mm`, e então [RT Trigger] em `0.20mm` e [RT Release] em `0.25mm`
+
+E ai eu coloco [RT Top] em `0.00mm`, e então [Trigger] e [RT End] em `3.95mm` Para converter o KeyPad para o modo de Rapid Trigger Contínuo.
+
+Fim.
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+###Desativar Rapid Trigger
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+###### ->==**Como?**==<-
+
+1. **Calibre** o switch PRÓPRIAMENTE. Pressione até o final gentílmente, até que você sinta o final do switch.
+
+2. Coloque [RT Top] e [RT End] em 0.00mm (Coloque o [RT Top] primeiro)
+
+3. Seu [Ponto de atuação] é o tanto que você colocou em [Trigger], menos o quanto que você queira em [Release]
+
+###### ->==**O que?**==<-
+
+Então eu quero um ponto de atuação de `3.2mm`.
+
+Eu faço os passos `1`, `2` e coloco meu [Trigger] em `3.20mm` e meu [Release] em `3.10mm`
+
+Fim.
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Placeholder
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Placeholder
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Placeholder
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+## -> Soluções diversas <-
+‎
+‎
+‎
+‎
+‎
+###Reset de fábrica
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+###### ->==**Como?**==<-
+
+!!! Use o `Google Chrome/Chromium`, `Microsoft Edge` ou `Opera` pra isso!
+	Firefox e outros navegadores não suportam o WebHID que o site usa para se comunicar com o KeyPad.
+!!! 🤓 ***[Para usuários de Linux]*** Algumas mudanças tem que ser feitas em udev rules. 
+	`sudo wget -P /etc/udev/rules.d https://dl.sayobot.cn/98-saybot.rules` e `sudo udevadm control --reload-rules`.
+	Reiniciar talvez seja necessário.
+1. Plugue seu KeyPad. Se necessário, Plugue ele enquanto *Pressiona o botão de rolágem.*
+
+2. Vá para `sayodevice.com` e selecione seu Keypad quando pedido.
+![Desse jeito.](https://images2.imgbox.com/d3/05/mJxNZfUa_o.png)
+
+3. Vá para a aba de `Settings` e selecione as 3 opções para abrir, do jeito mostrado abaixo.
+![Abram os portões!](https://images2.imgbox.com/a6/18/AP3t9I0h_o.png)
+
+4.  Vá para a aba de `HID`, selecione a opção lá embaixo (aquele é o código de reset de fábrica), e então clique na seta para selecionar ele.
+![Te vejo do outro lado.](https://images2.imgbox.com/40/fb/1J5ederB_o.png)
+
+5. Re-plugue o KeyPad.
+!!! danger Ainda não funciona?
+	Talvez você tenha que fazer um Reset de Hardware. [Clique aqui!](https://rentry.co/o3c#hardware-factory-reset)
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Reset de Hardware.
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+!!! Cuidado se você usa um O3C++, tem um guia no final do site.
+	se você está entediado e o seu O3C++ está funcionando perfeitamente e você só queira brincar, então NÃO FAÇA NADA DO GUIA!!! O EFEITO NÃO É REVERSÍVEL!
+
+1. Baixe [WCHISPStudio](https://www.wch.cn/downloads/file/196.html) e instale.
+‎
+‎
+‎
+2. Baixe o [base firmware package](https://lerh050.s-ul.eu/3aivec1x).
+‎
+‎
+‎
+3. Abra o WCHISPStudio e copie esses parâmetros EXATAMENTE DO JEITO QUE ESTÁ AQUI.
+Você pode selecionar a língua ![](https://images2.imgbox.com/77/df/lBORKdVV_o.png) na barra de cima.
+-> ![](https://images2.imgbox.com/bb/83/LO6Cc1KR_o.png) <-
+-> ![](https://images2.imgbox.com/03/83/QqkYIHBv_o.png) <-
+‎
+‎
+‎
+4. Remova o botão de rolagem, os switches, e as teclas, e desparafuse a placa de cima.
+(Dica de parceiro: use a placa como suporte para segurar os parafusos)
+-> ![](https://images2.imgbox.com/fd/23/FZ7oB7nQ_o.gif) <-
+E então balance o keypad para a tela saltar pra fora, NÃO PUXE ELA DE JEITO NENHUM!
+-> ![](https://images2.imgbox.com/f2/a2/MXWkPy6M_o.gif) <-
+‎
+‎
+‎
+5. Pegue algum metal condutivo (Clips, chave, etc) para fechar um curto nos 2 pinos debaixo da tela, então pluge o KeyPad *ENQUANTO FECHA CURTO NOS PINOS*.
+-> ![](https://images2.imgbox.com/b1/ec/OlkdH9Vl_o.gif) <-
+‎
+‎
+‎
+6. Se algo assim aparecer no WCHISPStudio, você está no caminho certo.
+-> ![](https://images2.imgbox.com/84/75/vtrkuoZu_o.png) <-
+‎
+‎
+‎
+7. Agora ![](https://images2.imgbox.com/93/f4/AZGkn5Ps_o.png), e então desplugue o KeyPad e *repita o passo 5*
+‎
+‎
+‎
+8. Selecione o base firmware package, marque a caixinha, e ![](https://images2.imgbox.com/6b/68/1t3G1Dc7_o.png)
+-> ![](https://images2.imgbox.com/b1/d5/eHG6bZhz_o.png) <-
+‎
+‎
+‎
+9. Replugue sua unidade, a não ser que você use um O3C++.  se usa, leia abaixo.
+
+!!! Usuários do O3C++ tem mais coisa para fazer.
+	Já que o base firmware package nesse guia só serve pro O3C NORMAL, os usuários do O3C++ tem que fazer mais coisas (depois de fazer a recuperação do hardware e para futuros upgrades).
+	O KeyPad vai ser reconhecido como um O3C NORMAL pelo Updater e então inserido com o pacote errado, então para isso você tem que: 
+	
+	1. Deletar a "app_o3c.bin" na pasta "firmware"
+	2. Renomear "app_o3c_pp.bin" para "app_o3c.bin"
+	3. e é isso. você pode abrir o arquivo .bat e atualizar normalmente agora.
+	
+	o resto funciona normalmente. o O3C++ que passou por todo esse processo (surpreendentemente) ainda é reconhecido como um O3C++ no site e no software, todas as customizações serão feitas normalmente. (tipo como wtf???)
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+##-> Display & Importar Mídia <-
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Como a mídia é importada
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+###### -> ==**Como?**== <-
+
+Alinhado no canto da parte esquerda encima, cada parte de mídia (GIFs são divididos em e processados frame por frame, e então o tamanho total é calculado sem adicionar nada) passa pelas seguintes coisas:
+
+1. Elas primeiro são reduzidas (bem feio, só um filtro bilinear)
+
+2. E então são convertidas para informação legível pelo KeyPad. isso desfaz a maioria das otimizações de imagens existentes.
+
+3. E então passam pelo seguinte algoritmo:
+
+-> ![ok](https://images2.imgbox.com/e0/2b/ZiuZoTAt_o.png) <-
+
+Isso geralmente resulta em um tamanho menor de arquivo, mas em casos raros pode ser maior. isso é por causa do processo de converter para informação legível..
+
+
+###### -> ==**O que?**== <-
+
+Cuide a resolução antes de importar! isso tem um impacto IMENSO. *Por exemplo*, se o seu gif tem muitos frames, é quadrado e só vai caber em um lado então coloque ele em uma menor resolução, tipo:
+
+-> ![xd](https://images2.imgbox.com/02/0c/9OqD9nfM_o.png) <-
+
+!!! danger Propoções abaixo 1:1 (tipo, 79:80) vão travar o seletor!!! tente se virar com isso por enquanto.
+
+O processo é consistente e vai gerar o mesmo resultado. (qualidade e tamanho do arquivo depois do processo) o tempo todo, independente do quanto você otimize seu material.
+
+Alem disso, você pode usar algorítmos melhores pra reduzir a escala como o (ImageMagick at [ezgif](https://ezgif.com/resize)). esse software do sayo é um lixo para isso. (muito basico, só um filtro bilinear e olhe lá ainda. ).
+
+Não se preocupe muito com a qualidade do material, quase sempre vai ser um lixo então boa sorte e divirta-se colocando seus GIFS.
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Como importar mídia
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+*É recomendável ver o passo [How media is imported](https://rentry.co/o3c#how-media-is-imported) primeiro.*
+
+###### ->==**Como?**==<-
+
+1. Baixe o software para o seu firmware. sempre veja a seção de [downloads](https://rentry.co/o3c/#downloads) .
+
+2. Plugue o KeyPad e abra-o.
+
+3. Clique na aba Images, clique no `+` e uma caixinha deve aparecer na sua tela. clique em `Open Picture` e selecione sua mídia.
+
+-> ![Tipo assim](https://images2.imgbox.com/5a/0e/gTzrxTPv_o.png)<-
+
+4. Uma caixa de ajuste deve aparecer (não vai aparecer se você não tem mais espaço), você pode colocar como quiser a imagem e depois clique em OK.
+
+-> ![Krater precisa do açúcar dele.](https://images2.imgbox.com/b4/a9/0kJCLddp_o.gif) <-
+
+!!! danger Propoções abaixo 1:1 (tipo, 79:80) vão travar o seletor!!! tente se virar com isso por enquanto.
+
+5. Clique nessa caixinha ![sim, essa](https://images2.imgbox.com/04/e8/t6VPesCO_o.png) para sobreescrever as mudanças no seu KeyPad.
+
+###### -> ==**O que?**== <-
+
+Por causa de o quão lixo é esse seletor, é recomendando que você mude a proporção em outro lugar em vez de usar ele.
+‎
+‎
+‎
+-> ![pequeno](https://images2.imgbox.com/93/65/UtlCNFkn_o.png) da ![isso](https://images2.imgbox.com/81/06/vdbyx6e0_o.png) <-
+‎
+‎
+‎
+‎
+‎
+-> ![grande](https://images2.imgbox.com/32/87/dsX2280t_o.png) da ![isso](https://images2.imgbox.com/7f/c8/wXXTEa6y_o.png) <-
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+##-> Extras <-
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+###Lista de swiches HE (Hall Effect)
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+Os valores máximos são de acordo com o **firmware mais novo** e **virado para o norte**
+(O valor máximo pode mudar de acordo com a direção que o switch é colocado, geralmente menos quando está virado para o sul)
+
+(Nota: você pode mexer/girar a lista por ai)
+Pic | Nome | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mecanismo | Valor máximo (approx. range) | Onde comprar | OEM | Notas |
+:----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+![Linear60 by Wooting](https://images2.imgbox.com/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	40/60gf	|	None/4mm	|	Linear	|	~800-1300	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
+![Linear45 by Wooting](https://images2.imgbox.com/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	30/45gf	|	None/4mm	|	Linear	|	~800-1300	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
+![Omnipoint by Steelseries](https://images2.imgbox.com/6b/4c/c95wQp3i_o.png)	|	Steelseries Omnipoint	|	30/45gf	|	None/4mm	|	Linear	|	~800-1300	|	[Disassemble](https://steelseries.com/innovation/omnipoint-switches)	|	Gateron|	Travado!	|
+![KS-20 White by Gateron](https://images2.imgbox.com/ed/2b/Os8xKgNJ_o.png)	|	Gateron KS-20 White	|	30/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
+![KS-20 Orange by Gateron](https://images2.imgbox.com/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	38/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
+![Random pic lmao](https://images2.imgbox.com/6a/50/4XL6tCE8_o.png)|	Yiqian Reds	|	30/50gf	|	None/4mm	|	Linear	|	~150-800	|	Não compre, é sério.	|	[Yiqian](https://detail.1688.com/offer/642498199922.html)	|	🍀	|
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Partes pra reposicionar
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+Botão principal: esse botão usa a nomenclatura padrão "EC11 Rotary Encoder", só dar um google. e tenha certeza que você compre o certo (ou pelo menos parecido.).
+*Você vai precisar de um ferro de solda pra tirar o botão.*
+
+Tela: Generic 0.96mm *spliced* TFT LCD display, [aqui um link](https://aliexpress.com/i/33008278658.html) (tem ofertas melhores por ai, só procurar)
+*Não precisa de equipamento para trocar ela, só desengata o botão encima. só encaixe o cabo certinho e feche o botãozinho que tem ali.*
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+## Downloads
+Esses são os links de acordo com o (discord, site, etc...).
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Firmware & Software
+Abra o firmware novo usando o arquivo .bat, sempre.
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+- ***Firmware Version 1.2*** [**Software**](https://lerh050.s-ul.eu/bM15stkA), [**Firmware**](https://lerh050.s-ul.eu/izRnQsWk)
+
+- ***Firmware Version 1.3*** [**Software**](https://lerh050.s-ul.eu/bM15stkA), [**Firmware**](https://lerh050.s-ul.eu/7JRw4jYS)
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Outras coisas
+***
+[Voltar?](https://rentry.co/o3c#index)
+
+- ***Top Plate Template***  [PSD File](https://lerh050.s-ul.eu/7QYd9IvQ)
+Dá pra usar esse molde para fazer seus proprios adesivos, dá pra personalizar do jeito que quiser a placa de cima.
+
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+# FAQ
+[Voltar?](https://rentry.co/o3c#sayodevice-o3c-resources)
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+Q: ![Clyde](https://images2.imgbox.com/0c/13/2gSYPwNa_o.png)?
+A: [Aqui](https://discord.gg/GjgSnaZ3Cu). Esse é o servidor ofícial do sayo. Você deve estar nele a não ser que não tenha lido o panfleto ou o link tenha expirado.
+‎
+‎
+‎
+Q: Quem mantem isso?
+A: Ninguém.
+‎
+‎
+‎
+Q: Quem ajuda?
+A: Olhe abaixo.
+‎
+‎
+‎
+Q: Como eu ajudo?
+A: No [GitHub](https://github.com/lerh050/o3c/). o site está procurando por tradutores, testadores, ou só mande uma DM para @lerh050 no Discord se você tenha algo que você ache que seja útil para esse site.
+
+***
+-> [***Voltar?***](https://rentry.co/o3c#index) ->
+#-> Modo claro/escuro aqui (clique) ->
+-> ![](https://images2.imgbox.com/c4/9c/zBPLmFQw_o.png) ->
