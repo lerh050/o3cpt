@@ -6,17 +6,17 @@ Alem disso é o lugar com tem todas as dicas e macetes que se pode fazer com o S
 
 Este site não é relacionado com qualquer pessoal do Sayo.
 
-Pra começar, Clique no [*Índice*](https://rentry.co/o3c#index).
+Pra começar, Clique no [*Índice*](https://rentry.co/o3cpt#índice).
 
-Ou cheque a [FAQ](https://rentry.co/o3c#faq) se você tem dúvidas sobre este site.
+Ou cheque a [FAQ](https://rentry.co/o3cpt#faq) se você tem dúvidas sobre este site.
 
 Divirta-se!
 -> ![wat](https://lerh050.s-ul.eu/8FVXvPJU) <-
 
 #🇷🇺🇨🇳 Outras línguas 🇷🇺🇨🇳
-- [Íngles 🇺🇸](https://rentry.co/o3c#index)
-- [Russo 🇷🇺](https://rentry.co/o3cru)
-- [Ucrâniano 🇺🇦](https://rentry.co/o3cua)
+- [English 🇺🇸](https://rentry.co/o3cpt#índice)
+- [Russian 🇷🇺](https://rentry.co/o3cru)
+- [Ukrainian 🇺🇦](https://rentry.co/o3cua)
 
 ***
 ‎
@@ -92,7 +92,7 @@ Divirta-se!
 ‎
 ‎
 #Índice
-#-> [Modo claro/escuro aqui....](https://rentry.co/o3c#lightdark-mode-here-click-it) <-
+#-> [light/dark mode here....](https://rentry.co/o3c#lightdark-mode-here-click-it) <-
 -> ==***Não sabe o que fazer? Cheque a calibração - > Explicação dos parâmetros dos switches.***== <-
 [TOC2]
 
@@ -139,7 +139,7 @@ Divirta-se!
 ‎
 ### Calibração
 ***
-[Quer voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ######->==**Como?**==<-
 
@@ -191,7 +191,7 @@ Você tem que sempre pressionar com cuidado, se apertar demais o switch as presi
 ‎
 ### Explicação dos parâmetros do switch
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ***Todos*** os valores são ***RELATIVOS*** a o topo do switch (0.00mm), e eles são construidos assumindo que você tenha um switch com **4mm de atuação**. 
 (Talvez você esteja procurando o [HE switches chart](https://rentry.co/o3c#he-switches-chart) )
@@ -221,8 +221,8 @@ A distância entre eles decide o quão grande seu [Ponto de atuação] é, do qu
 Você pode ter pontos como `0.05mm`, mas aí pode acontecer de causar clicks acidentais e clicks não intencionados por causa de interferência no sensor.
 
 !!! warning NO ENTANTO, tem um macete legal.
-	Se o seu [Ponto de atuação] está acima de `0.10mm` ou menor pode causar clicks aleatórios na parte de cima da zona de atuação. [Veja o vídeo](https://lerh050.s-ul.eu/NjZ0YjMf)
-	Para arrumar isso, Aumente a distância para no mínimo `0.15mm` (Talvez até mair) em vez de `0.10mm`. [Veja o vídeo](https://lerh050.s-ul.eu/hCyP9ATj)
+	Se o seu [Ponto de atuação] está abaixo de `0.10mm` ou menor pode causar clicks aleatórios na parte de cima da zona de atuação. [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
+	Para arrumar isso, Aumente a distância para no mínimo `0.15mm` (Talvez até mais) em vez de `0.10mm`. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
 
 Por exemplo:
 
@@ -236,21 +236,21 @@ e colocar meu [Release] para `0.10mm` para que eu tenha que soltar `0.20mm` para
 
 ###### -> ==[RT Top] e [RT End]== <-
 
-Esses dois parâmetros definem onde o Rapid Trigger vai funcionar, que é referico como [Área de RT]
+Esses dois parâmetros definem onde o Rapid Trigger vai funcionar, que é referido como [Área de RT]
 
 [RT Top] define o topo da [Área de RT].
 Se você quer que o Rapid Trigger esteja ativo o tempo todo, apenas coloque com o mesmo valor do [Trigger].
 Qualquer valor é usado para casos avançados (Como usar Rapid Trigger em só metade da área de atuação do switch, etc...)
-[Rapid Trigger Contínuo](https://rentry.co/o3c#continuous-rapid-trigger) e [Desativar Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger) também faz um uso especial disso.
+[Continuous rapid trigger](https://rentry.co/o3c#continuous-rapid-trigger) e [Disable rapid trigger](https://rentry.co/o3c#disable-rapid-trigger) também faz um uso especial disso.
 
 [RT End] define o final da [Área de RT].
 Para a maioria das pessoas, a única vez que você vai alterar isso é:
 1. Seus dedos são muito tremidos enquanto você segura um slider, nesse caso você teria que diminuir até que você não ative sem querer o [RT Release]. isso cria uma "Zona Morta no final da Área de atuação" para a sua tremedeira.
 2. Mais ou menos igual a de cima, se você está sentindo que o click está se soltando sozinho enquanto *levantando a tecla*, reduzir ajudaría também.
-3. [Desativar Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger)
+3. [Disable Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger)
 (O valor padrão já é perfeito o suficiente, então você mal vai precisar mexer nisso)
 
-Só você seja um louco que tem as próprias ideias de como a sua gameplay tem que ser, eu não sei.
+Só se você seja um louco que tem as próprias ideias de como a sua gameplay tem que ser, eu não sei.
 
 
 ###### -> ==[RT Trigger] e [RT Release]== <-
@@ -363,11 +363,11 @@ Fim.
 ‎
 ###Desativar Rapid Trigger
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ###### ->==**Como?**==<-
 
-1. **Calibre** o switch PRÓPRIAMENTE. Pressione até o final gentílmente, até que você sinta o final do switch.
+1. **Calibre** o switch PRÓPRIAMENTE. Pressione até o final gentilmente, até que você sinta o final do switch.
 
 2. Coloque [RT Top] e [RT End] em 0.00mm (Coloque o [RT Top] primeiro)
 
@@ -456,7 +456,7 @@ Fim.
 ‎
 ### Placeholder
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ***
 ‎
@@ -533,7 +533,7 @@ Fim.
 ‎
 ### Placeholder
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ***
 ‎
@@ -610,7 +610,7 @@ Fim.
 ‎
 ### Placeholder
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ***
 ‎
@@ -693,7 +693,7 @@ Fim.
 ‎
 ###Reset de fábrica
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ###### ->==**Como?**==<-
 
@@ -715,7 +715,7 @@ Fim.
 
 5. Re-plugue o KeyPad.
 !!! danger Ainda não funciona?
-	Talvez você tenha que fazer um Reset de Hardware. [Clique aqui!](https://rentry.co/o3c#hardware-factory-reset)
+	Talvez você tenha que fazer um Reset de Hardware. [Click here!](https://rentry.co/o3c#hardware-factory-reset)
 
 ***
 ‎
@@ -792,7 +792,7 @@ Fim.
 ‎
 ### Reset de Hardware.
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 !!! Cuidado se você usa um O3C++, tem um guia no final do site.
 	se você está entediado e o seu O3C++ está funcionando perfeitamente e você só queira brincar, então NÃO FAÇA NADA DO GUIA!!! O EFEITO NÃO É REVERSÍVEL!
@@ -943,7 +943,7 @@ E então balance o keypad para a tela saltar pra fora, NÃO PUXE ELA DE JEITO NE
 ‎
 ### Como a mídia é importada
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 ###### -> ==**Como?**== <-
 
@@ -966,7 +966,7 @@ Cuide a resolução antes de importar! isso tem um impacto IMENSO. *Por exemplo*
 
 -> ![xd](https://images2.imgbox.com/02/0c/9OqD9nfM_o.png) <-
 
-!!! danger Propoções abaixo 1:1 (tipo, 79:80) vão travar o seletor!!! tente se virar com isso por enquanto.
+!!! danger Propoções abaixo de 1:1 (tipo, 79:80) vão travar o seletor!!! tente se virar com isso por enquanto.
 
 O processo é consistente e vai gerar o mesmo resultado. (qualidade e tamanho do arquivo depois do processo) o tempo todo, independente do quanto você otimize seu material.
 
@@ -1049,9 +1049,9 @@ Não se preocupe muito com a qualidade do material, quase sempre vai ser um lixo
 ‎
 ### Como importar mídia
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
-*É recomendável ver o passo [How media is imported](https://rentry.co/o3c#how-media-is-imported) primeiro.*
+*É recomendável ver o passo [Como a mídia é importada](https://rentry.co/o3cpt#como-a-mídia-é-importada) primeiro.*
 
 ###### ->==**Como?**==<-
 
@@ -1067,7 +1067,7 @@ Não se preocupe muito com a qualidade do material, quase sempre vai ser um lixo
 
 -> ![Krater precisa do açúcar dele.](https://images2.imgbox.com/b4/a9/0kJCLddp_o.gif) <-
 
-!!! danger Propoções abaixo 1:1 (tipo, 79:80) vão travar o seletor!!! tente se virar com isso por enquanto.
+!!! danger Propoções abaixo de 1:1 (tipo, 79:80) vão travar o seletor!!! tente se virar com isso por enquanto.
 
 5. Clique nessa caixinha ![sim, essa](https://images2.imgbox.com/04/e8/t6VPesCO_o.png) para sobreescrever as mudanças no seu KeyPad.
 
@@ -1219,7 +1219,7 @@ Por causa de o quão lixo é esse seletor, é recomendando que você mude a prop
 ‎
 ###Lista de swiches HE (Hall Effect)
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[go back?](https://rentry.co/o3cpt#índice)
 
 Os valores máximos são de acordo com o **firmware mais novo** e **virado para o norte**
 (O valor máximo pode mudar de acordo com a direção que o switch é colocado, geralmente menos quando está virado para o sul)
@@ -1309,12 +1309,12 @@ Pic | Nome | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mecanismo | Valor
 ‎
 ### Partes pra reposicionar
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[Voltar?](https://rentry.co/o3cpt#índice)
 
-Botão principal: esse botão usa a nomenclatura padrão "EC11 Rotary Encoder", só dar um google. e tenha certeza que você compre o certo (ou pelo menos parecido.).
-*Você vai precisar de um ferro de solda pra tirar o botão.*
+Botão de rolágem: esse botão usa a nomenclatura padrão "EC11 Rotary Encoder", só dar um google. e tenha certeza que você compre o certo (ou pelo menos parecido.).
+*Você vai precisar de um ferro de solda pra tirar o mecanismo do botão.*
 
-Tela: Generic 0.96mm *spliced* TFT LCD display, [aqui um link](https://aliexpress.com/i/33008278658.html) (tem ofertas melhores por ai, só procurar)
+Tela: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.com/i/33008278658.html) (tem ofertas melhores por ai, só procurar)
 *Não precisa de equipamento para trocar ela, só desengata o botão encima. só encaixe o cabo certinho e feche o botãozinho que tem ali.*
 
 ***
@@ -1453,7 +1453,7 @@ Esses são os links de acordo com o (discord, site, etc...).
 ### Firmware & Software
 Abra o firmware novo usando o arquivo .bat, sempre.
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[Voltar?](https://rentry.co/o3cpt#índice)
 
 - ***Firmware Version 1.2*** [**Software**](https://lerh050.s-ul.eu/bM15stkA), [**Firmware**](https://lerh050.s-ul.eu/izRnQsWk)
 
@@ -1533,7 +1533,7 @@ Abra o firmware novo usando o arquivo .bat, sempre.
 ‎
 ### Outras coisas
 ***
-[Voltar?](https://rentry.co/o3c#index)
+[Voltar?](https://rentry.co/o3cpt#índice)
 
 - ***Top Plate Template***  [PSD File](https://lerh050.s-ul.eu/7QYd9IvQ)
 Dá pra usar esse molde para fazer seus proprios adesivos, dá pra personalizar do jeito que quiser a placa de cima.
@@ -1825,7 +1825,7 @@ Dá pra usar esse molde para fazer seus proprios adesivos, dá pra personalizar 
 ‎
 ‎
 # FAQ
-[Voltar?](https://rentry.co/o3c#sayodevice-o3c-resources)
+[go back?](https://rentry.co/o3c#sayodevice-o3c-resources)
 ‎
 ‎
 ‎
@@ -1853,6 +1853,6 @@ Q: Como eu ajudo?
 A: No [GitHub](https://github.com/lerh050/o3c/). o site está procurando por tradutores, testadores, ou só mande uma DM para @lerh050 no Discord se você tenha algo que você ache que seja útil para esse site.
 
 ***
--> [***Voltar?***](https://rentry.co/o3c#index) ->
+-> [***Voltar?***](https://rentry.co/o3cpt#índice) ->
 #-> Modo claro/escuro aqui (clique) ->
 -> ![](https://images2.imgbox.com/c4/9c/zBPLmFQw_o.png) ->
