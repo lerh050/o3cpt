@@ -92,7 +92,7 @@ Divirta-se!
 ‎
 ‎
 #Índice
-#-> [light/dark mode here....](https://rentry.co/o3c#lightdark-mode-here-click-it) <-
+#-> [light/dark mode here....](https://rentry.co/o3cpt#modo-claroescuro-aqui-clique) <-
 -> ==***Não sabe o que fazer? Cheque a calibração - > Explicação dos parâmetros dos switches.***== <-
 [TOC2]
 
